@@ -9,11 +9,11 @@ default: &default
   encoding: unicode
   pool: 5
   timeout: 5000
-  host: ec2-184-72-228-128.compute-1.amazonaws.com
-  username: kympbyttzrgjds
-  password: 2ea629e0dd9f18a90589a7b842b176d2b9f50bf66489babed27e818705808c36
-  database: ddbap1so6dkaf5
-  port: 5432
+  host: localhost
+  username: postgres
+  password: postgres
+  database: shawarmacp
+  port: 5433
 
 development:
   <<: *default

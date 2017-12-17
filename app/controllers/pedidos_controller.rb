@@ -1,5 +1,22 @@
 class PedidosController < ApplicationController
 
+def result(outputHTML,outputJSON)
+    respond_to do |format|
+      format.html { 
+        if outputHTML != nil
+          redirect_to outputHTML
+        end      
+      }
+      format.json { 
+        if outputJSON != nil
+          render :json => outputJSON, :status => :ok
+        else
+          render :json => "", :status => :bad_request
+        end
+      }
+    end
+  end
+
   def index
     p "Index"
     @elements = Pedido.all
@@ -36,7 +53,9 @@ class PedidosController < ApplicationController
       zanahoria: params["pedido"]["zanahoria"],
       ciboulette: params["pedido"]["ciboulette"],
       aceitunas: params["pedido"]["aceitunas"],
-      picante: params["pedido"]["picante"] )
+      picante: params["pedido"]["picante"],
+      papaspay: params["pedido"]["papaspay"]
+       )
     if ( @element != nil ) && ( !@element.save )
       @element = nil
     end

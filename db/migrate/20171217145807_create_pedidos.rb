@@ -18,6 +18,7 @@ class CreatePedidos < ActiveRecord::Migration[5.0]
       t.boolean :ciboulette
       t.boolean :aceitunas
       t.boolean :picante
+      t.boolean :papaspay
     end
   end
 end

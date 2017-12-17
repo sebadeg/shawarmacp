@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20171217145807) do
     t.boolean "ciboulette"
     t.boolean "aceitunas"
     t.boolean "picante"
+    t.boolean "papaspay"
   end
 
 end
