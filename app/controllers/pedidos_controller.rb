@@ -16,7 +16,7 @@ def result(outputHTML,outputJSON)
       }
     end
   end
-
+  
   def index
     p "Index"
     @elements = Pedido.all
@@ -54,8 +54,7 @@ def result(outputHTML,outputJSON)
       ciboulette: params["pedido"]["ciboulette"],
       aceitunas: params["pedido"]["aceitunas"],
       picante: params["pedido"]["picante"],
-      papaspay: params["pedido"]["papaspay"]
-       )
+      papaspay: params["pedido"]["papaspay"] )
     if ( @element != nil ) && ( !@element.save )
       @element = nil
     end
