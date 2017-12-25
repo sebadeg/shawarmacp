@@ -1,0 +1,24 @@
+<%= form_for @element, as: :pedido, url: locals[:url_data], method: locals[:method_data] do |f| %>
+  <table>
+
+    <tr><td>Nombre</td><td><%= f.text_field :nombre %></td></tr>
+    <tr><td>Carne</td><td><%= f.check_box :carne %></td></tr>
+    <tr><td>Pollo</td><td><%= f.check_box :pollo %></td></tr>
+    <tr><td>Falafel</td><td><%= f.check_box :falafel %></td></tr>
+    <tr><td>Mayonesa</td><td><%= f.check_box :mayonesa %></td></tr>
+    <tr><td>Salsa de tomate</td><td><%= f.check_box :salsa %></td></tr>
+    <tr><td>Hummus</td><td><%= f.check_box :humus %></td></tr>
+    <tr><td>Tahini</td><td><%= f.check_box :tahini %></td></tr>
+    <tr><td>Yogurt</td><td><%= f.check_box :yogurt %></td></tr>
+    <tr><td>Lechuga</td><td><%= f.check_box :lechuga %></td></tr>
+    <tr><td>Tomate</td><td><%= f.check_box :tomate %></td></tr>
+    <tr><td>Cebolla</td><td><%= f.check_box :cebolla %></td></tr>
+    <tr><td>Repollo</td><td><%= f.check_box :repollo %></td></tr>
+    <tr><td>Zanahoria</td><td><%= f.check_box :zanahoria %></td></tr>
+    <tr><td>Ciboulette</td><td><%= f.check_box :ciboulette %></td></tr>
+    <tr><td>Aceitunas</td><td><%= f.check_box :aceitunas %></td></tr>
+    <tr><td>Picante</td><td><%= f.check_box :picante %></td></tr>
+    <tr><td>Papas pay</td><td><%= f.check_box :papaspay %></td></tr>
+    <tr><td align=center><%= f.submit "OK" %></td></tr>
+  </table>
+<% end %>
