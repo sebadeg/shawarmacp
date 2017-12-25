@@ -4,9 +4,9 @@ default: &default
   pool: 5
   timeout: 5000
   host: ec2-54-83-60-13.compute-1.amazonaws.com
-  username: xxfkicmgmyuoiy
-  password: 6e4ab9fc750c66adaf18758a67f61b1d0575216341c41658636d5b79e4b8ca5b
-  database: d7ff6snrpvmbu0
+  username: iwythhthmqwltt
+  password: 9ba1b701b9517d726504e41a0ae6f942c776ae4f208796808cd0a43762a79305
+  database: duqr1nrn8k013
   port: 5432
 
 development:
